@@ -16,23 +16,23 @@ function validateCount(arg) {
 
 // задача 2
 class Triangle {
-  constructor (A, B, C) {
-    this.A = A;
-    this.B = B;
-    this.C = C;
-    if (A + B < C || A + C < B || B + C < A){
+  constructor (a, b, c) {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+    if (a + b < c || a + c < b || b + c < a){
            throw new Error ("Треугольник с такими сторонами не существует")
 
     }
   }
 
     getPerimeter(){
-    return this.A + this.B + this.C
+    return this.a + this.b + this.c
     }
 
     getArea() {
         const p = this.getPerimeter() / 2
-        const s = Math.sqrt(p * (p - this.A) * (p - this.B) * (p - this.C))
+        const s = Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c))
         return + s.toFixed(3)
       }
 }
