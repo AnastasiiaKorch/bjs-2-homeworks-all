@@ -1,3 +1,4 @@
+//задача 1
 function parseCount(arg){
     let number = Number.parseInt(arg)
     if (isNaN(number)){
